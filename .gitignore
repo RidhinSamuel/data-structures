@@ -1,0 +1,7 @@
+*.in
+test*.py
+unit*.py
+dsa-key
+dsa-key.pub
+ssh-add
+
