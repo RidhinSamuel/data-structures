@@ -1,4 +1,4 @@
-def display(mat,row,col,matrixNo=None):
+def display(mat,row,col,matrixNo=" "):
 	print(f"Rows={row} and Col={col} \n\nMatrix ",matrixNo)
 	for i in range(row):
 		print(*mat[i])
