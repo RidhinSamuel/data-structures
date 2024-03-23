@@ -1,5 +1,5 @@
 from matrixAddition import addTwoMatrixes
-
+from matrixTranspose import transpose
 def test_addTwoMatrixes():
     # Test case 1
     mat1 = [[1, 2], [3, 4]]
@@ -12,3 +12,9 @@ def test_addTwoMatrixes():
     mat4 = [[9, 8, 7], [6, 5, 4], [3, 2, 1]]
     expected_result_2 = [[10, 10, 10], [10, 10, 10], [10, 10, 10]]
     assert addTwoMatrixes(mat3, mat4, 3, 3) == expected_result_2
+
+def test_transpose():
+    #Test Case 1
+    mat1=[[1,2,3,4],[6,7,8,9]]
+    expected_result=[[1,6],[2,7], [3,8], [4,9]]
+    assert transpose(mat1,2,4)==expected_result
