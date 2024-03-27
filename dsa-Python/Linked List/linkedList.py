@@ -1,3 +1,6 @@
+# This Python code defines a LinkedList class with methods to insert nodes at the beginning, end, or a
+# specific index, delete nodes from the beginning, end, or a specific index, and display the linked
+# list.
 class Node:
     def __init__(self, data,next=None):
         self.data = data
