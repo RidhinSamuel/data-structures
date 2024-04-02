@@ -6,20 +6,23 @@ sum as the given sum, print first such subarray."""
 def find_subarray(a,n,k):
     s=a[0]
     left=0
-    right=1
+    right=0
+    maxLen=0
     while right<n:
-        s+=a[right]
-        while s>k and left<n:
+        while s>k and left<=right:
             s-=a[left]
             left+=1
         if s==k:
-            print(left,right)
+            maxLen=max(right-left+1,maxLen)
         right+=1
-    return
+        if right< n:
+            s+=a[right]
+    return maxLen
 
 
 limit=int(input())
 l=[int(input()) for _ in range(limit)]
 s=int(input())
 print("List is  ",l)
-find_subarray(l,limit,s)
+print("k is ",s)
+print(find_subarray(l,limit,s))
