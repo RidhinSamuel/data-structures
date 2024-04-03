@@ -4,6 +4,7 @@ In this repo , I have implemented some data structures and algorithms program in
  
 ---
 * Array
+* String
 * Stack
 * Queue
 * Linked List (Singly, Doubly)
